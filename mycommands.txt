@@ -1,0 +1,8 @@
+To start the MongoDB GUI
+cd ~/robo3t/bin
+./robo3t
+
+
+To start MongoDB
+cd ~/mongo/bin
+./mongod --dbpath ~/mongo-data
