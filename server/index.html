@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+
+<body>
+  Hey! Lets try uploading to s3 directly :)
+
+  <form method="post" enctype="multipart/form-data" action="/upload">
+    <p>
+      <input type="text" name="title" placeholder="optional title" />
+    </p>
+
+    <p>
+      <input type="file" name="file" />
+    </p>
+
+    <p>
+      <input type="submit" />
+    </p>
+  </form>
+
+  <button onclick="window.location.href='/list'">List Bucket Contents</button>
+  <br>
+  <button onclick="window.location.href='/download'">Download a file</button>
+</body>
+
+</html>
