@@ -1,8 +1,18 @@
-const start = Date.now();
-const lastUpdated = '2018-10-10T10:10:22.896Z';
+const myFunc = () => {
+  const mytestPromise = async () => {
+    new Promise((resolve, reject) => {
+      console.log(`inside my promise`);
+      resolve();
+    })
+  };
 
-const diff = (Date.now() - new Date(lastUpdated)) / 1000;
+  console.log('before timeout');
+  const result = setTimeout(mytestPromise, 2000);
+  console.log('after timeout');
 
-if (diff && lastUpdated) {
- console.log('diff is:' + diff);
 }
+
+
+
+
+myFunc('dog', 'cat', 'fish');
