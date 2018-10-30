@@ -6,3 +6,10 @@ cd ~/robo3t/bin
 To start MongoDB
 cd ~/mongo/bin
 ./mongod --dbpath ~/mongo-data
+
+To list heroku config
+  heroku config
+To set heroku config
+  heroku config:set JWT_SECRET=blah
+  or
+  heroku config:unset JWT_SECRET

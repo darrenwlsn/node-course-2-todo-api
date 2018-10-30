@@ -1,18 +1,19 @@
 require('dotenv').config();
+require('./config/config');
 
-var env = process.env.NODE_ENV;
-if (env == undefined) {
-  process.env['NODE_ENV'] = 'development';
-}
-console.log('env*** ' + process.env.NODE_ENV);
+// var env = process.env.NODE_ENV;
+// if (env == undefined) {
+//   process.env['NODE_ENV'] = 'development';
+// }
+// console.log('env*** ' + process.env.NODE_ENV);
 
-if (process.env.NODE_ENV == 'development') {
-  process.env['PORT'] = 3000;
-  process.env['MONGODB_URI'] = 'mongodb://localhost:27017/TodoApp';
-} else if (env === 'test') {
-  process.env['PORT'] = 3000;
-  process.env['MONGODB_URI'] = 'mongodb://localhost:27017/TodoAppTest'; // now tests use a different database
-}
+// if (process.env.NODE_ENV == 'development') {
+//   process.env['PORT'] = 3000;
+//   process.env['MONGODB_URI'] = 'mongodb://localhost:27017/TodoApp';
+// } else if (env === 'test') {
+//   process.env['PORT'] = 3000;
+//   process.env['MONGODB_URI'] = 'mongodb://localhost:27017/TodoAppTest'; // now tests use a different database
+// }
 
 const _ = require('lodash');
 const express = require('express');
