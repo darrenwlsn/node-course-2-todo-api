@@ -13,3 +13,8 @@ To set heroku config
   heroku config:set JWT_SECRET=blah
   or
   heroku config:unset JWT_SECRET
+  or (this env variable is set for you by heroku when you attach the mongodb dbase to heroku as a plugin )
+  heroku config:get MONGODB_URI
+
+  To publish to heroku  
+    git push heroku master
